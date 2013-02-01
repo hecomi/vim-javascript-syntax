@@ -13,7 +13,7 @@ if !exists("main_syntax")
   if version < 600
     syntax clear
   elseif exists("b:current_syntax")
-    finish
+    " finish
   endif
   let main_syntax = 'javascript'
 endif
@@ -284,7 +284,7 @@ if version >= 508 || !exists("did_javascript_syn_inits")
 
 	HiLink javaScriptFuncDef            Title
     HiLink javaScriptFuncArg            Special
-    HiLink javaScriptFuncComma          Operator  
+    HiLink javaScriptFuncComma          Operator
 
 	HiLink javaScriptHtmlEvents         Special
 	HiLink javaScriptHtmlElemProperties Type
